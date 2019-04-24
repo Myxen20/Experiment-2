@@ -1,34 +1,41 @@
-// Montes, Rhaniel Myxen A.
+// Montes, Experiment 2 num2.
 #include <iostream>
 #include <conio.h>
+
 using namespace std;
 
 int main()
 {
-  int package, packageA, packageB, packageC, usage;
-  packageA = 995;
-  packageB = 1495;
-  packageC = 1995;
-  
-  cout << " OneSixteen Internet Service Provider Website." << endl;
-  cout << " Number guide for input:" << endl;
-  cout << " Type 1 for package A, 2 for package B, and 3 for package C" << endl;
-  cout << " ------------------------------------------------------------" << endl;
-  {
-      cout << " To check your monthly bill, enter package number \t" ;
-            cin >> package;
-      cout << " Enter exceeding hours of usage for package A and B \t" ;
-            cin >> usage;
+    int package, packageA, packageB, packageC, addtlusage;
+      packageA = 995;
+      packageB = 1495;
+      packageC = 1995;
+    
+    cout << " OneSixteen Internet Provider Website. " << endl;
+    cout << " Guide for checking total monthly bill: " << endl;
+    cout << " Type 1 for Package A \n Type 2 for Package B \n Type 3 for Package C." << endl;
+    cout << "---------------------------------------------------------------" << endl;
+    
+    {
+        cout << " Enter the number corresponding to Package Subscription: \t" ;
+        cin >> package;
+        cout << " Enter additional hours of usage: \t" ;
+        cin >> addtlusage;
         
         if (package == 1)
-            cout << " Your total monthly bill is = " << packageA + (usage)*(20) << endl;
+            cout << " Total Monthly Bill = \t" << packageA + (addtlusage * 20) << endl;
+        
         else if (package == 2)
-            cout << " Your total monthly bill is = " << packageB + (usage)*(10) << endl;
+            cout << " Total Monthly Bill = \t" << packageB + (addtlusage * 10) << endl;
+        
         else if (package == 3)
-            cout << " Your total monthly bill is = " << packageC << endl;
-        else 
-            cout << " You should enter a valid package or usage" << endl;
-  }
-  getch();
-  return 0;
+            cout << " Total Monthly Bill = \t" << packageC << endl;
+        
+        else
+            cout << " Your input is invalid." << endl;
+    }
+    
+    cout << "Thank you and have a nice day!" << endl;
+    
+    return 0;
 }
