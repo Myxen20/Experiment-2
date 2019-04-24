@@ -1,73 +1,73 @@
-// Experiment 2, number 3
 #include <iostream>
 #include <conio.h>
 #include <cmath>
+
 using namespace std;
 
 int main()
 {
-  int x, y;
-  float z, s, vpos;
-  z = 2.5;
-  
-  cout << " enter value of x \t" ;
-    cin >> x;
-    
-  switch (x)
- {
-     case 1: 
-        cout << " value of x is 1 \n ";
-        { 
-            cout << " enter value of y \t";
-            cin >> y;
-            if ( y > 1) 
-                cout << " V = " << x * y * z << endl;
-            else if ( y < 5)
-                cout << " V = " << x * y * z << endl;
-            else if ( y >= 5 )
-                cout << " V = " << x + y/z << endl;
-            else 
-                cout << " V = " << x + y + z << endl;
-        }
-        break;
-    
-     case 2:
-        cout << " value of x is 2 ";
-        cout << "        \n" ;
-        { 
-            cout << " enter value of y \t" ;
-            cin >> y;
-            vpos -= (x-y)/z;
-            s = x - sqrt(y+z);
-            
-            if (y <= 5)
-               cout << " V = " << vpos << endl;
-        
-            else if (y >5)
-                cout << " V = " << s << endl;
-                
-            else
-                cout << " V = " << x + y + z << endl;
-        }
-        
-    
-        break;
-        
-     case 3:
-        cout << " values of x is less than 1 or greater than 2 \n" ;
-        { 
-            cout << " enter value of y \t" ;
-                cin >> y;
-            cout << " \n" ;
-            cout << " V = " << x + y + z << endl;
-        }
-        
-        break;
- }   
- 
-
-getch();
-return 0;
+	int x, y;
+	float z, s, vpos = 0.0;
+	z = 2.5;
+	
+	cout << "Enter value of x: \t";
+		cin >> x;
+	
+	switch(x)
+	{
+		case 1:
+			cout << "Value of x is 1." << endl;
+		{
+			cout << "Enter value of y: \t" ;
+				cin >> y;
+				
+				if (y>1)
+					cout << " V = " << x * y * z << endl;
+				
+				else if (y<5)
+					cout << "V = " << x * y * z << endl;
+				
+				else if (y >= 5)
+					cout << " V = " << x + y/z << endl;
+				
+				else
+					cout << "V = " << x + y + z << endl;
+		
+		} // case 1 if - bracket
+		break;
+		
+		case 2:
+			cout << "Value of x is 2." << endl;
+		{ // case 2 if bracket
+			cout << "Enter value of y: \t" ;
+				cin >> y;
+			
+			vpos -= (x-y)/z;
+			s = x- sqrt(y+z);
+			
+			if (y<=5)
+				cout << "V = " << vpos << endl;
+				
+			else if (y>5)
+				cout << "V = " << s << endl;
+			
+			else
+				cout << "V = " << x + y + z << endl;
+		}
+			break;
+				
+		
+		case 3:
+			cout << " For other values of x and y." << endl;
+			cout << " Enter value of y: \t";
+				cin >> y;
+			cout << "\n";
+			cout << "V = " << x + y + z << endl;
+		
+			break;
+			
+	} // switch bracket
+	
+  getch();
+	return 0;
 }
-
-
