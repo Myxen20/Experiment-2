@@ -1,0 +1,39 @@
+// Experiment 2 - Num 4
+
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{
+  int firstnum, secondnum, thirdnum;
+  
+  {
+  
+    cout << "Enter first number: \t" ;
+      cin >> firstnum;
+     
+    cout << "Enter second number: \t" ;
+      cin >> secondnum;
+     
+    cout << "Enter third number: \t" ;
+      cin >> thirdnum;
+      
+      if (firstnum > secondnum && firstnum > thirdnum)
+          cout << "Largest number is " << firstnum;
+      
+      else if (secondnum > firstnum && secondnum > thirdnum)
+          cout << "Largest number is " << secondnum;
+      
+      else if (thirdnum > firstnum && thirdnum > secondnum)
+          cout << "Largest number is " << thirdnum;
+          
+      else
+          cout << "Largest number can't be identified" ;
+          
+     }
+     
+return 0;
+
+}
