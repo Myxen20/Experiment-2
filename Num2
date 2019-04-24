@@ -1,0 +1,33 @@
+// Experiment 2 - #2
+#include <iostream>
+#include <conio.h>
+using namespace std;
+
+int main()
+{
+    int wdcharge, latecharge;
+    float consumptioncharge, gallonused, intlbill, obalance;
+    
+    wdcharge = 35;
+    latecharge = 20;
+    consumptioncharge = 1.10;
+    
+ cout << "OneSixteen Water Bill Calculator" << endl;
+ cout << "   Enter amount of gallons used \t" ;
+        cin >> gallonused;
+    
+    intlbill = ( gallonused * consumptioncharge ) + wdcharge;
+    
+ 
+ {
+     cout << "   Enter amount of outstanding balance \t";
+        cin >> obalance;
+        if (obalance == 0)
+            cout << "   Your total bill is = " << intlbill << " pesos." << endl;
+        if (obalance > 0)
+            cout << "   Your total bill is = " << intlbill + latecharge << " pesos." << endl;
+
+ }
+ getch();
+ return 0;
+}
