@@ -68,6 +68,6 @@ int main()
 			
 	} // switch bracket
 	
-  getch();
+	_getch();
 	return 0;
 }
