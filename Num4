@@ -2,7 +2,6 @@
 
 #include <iostream>
 #include <conio.h>
-
 using namespace std;
 
 int main()
@@ -20,20 +19,21 @@ int main()
     cout << "Enter third number: \t" ;
       cin >> thirdnum;
       
-      if (firstnum > secondnum && firstnum > thirdnum)
-          cout << "Largest number is " << firstnum;
+      if (firstnum > secondnum && firstnum > thirdnum){
+          cout << "Largest number is " << firstnum;}
       
-      else if (secondnum > firstnum && secondnum > thirdnum)
-          cout << "Largest number is " << secondnum;
+      else if (secondnum > firstnum && secondnum > thirdnum){
+          cout << "Largest number is " << secondnum;}
       
-      else if (thirdnum > firstnum && thirdnum > secondnum)
-          cout << "Largest number is " << thirdnum;
+      else if (thirdnum > firstnum && thirdnum > secondnum){
+          cout << "Largest number is " << thirdnum;}
           
       else
           cout << "Largest number can't be identified" ;
           
      }
-     
+_getch();     
 return 0;
 
 }
+
