@@ -1,0 +1,20 @@
+// Experiment 2 - number 8
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+int main()
+{
+    int i, n;
+    cout << "Multiplication Table: \n" ;
+    cout << "Input a certain number: \t" ;
+        cin >> n;
+    for (i = 1; i <= 10; i++) 
+    {
+        cout << i << "x" << n << "=" << i*n << endl;
+    }
+    
+    _getch();
+    return 0;
+   
+}
