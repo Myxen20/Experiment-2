@@ -1,0 +1,22 @@
+// Experiment 2- number 7
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+int main()
+{
+    int i, n, sum=0;
+    cout << "Finding sum of numbers: \n" ;
+    cout << "Input a certain number: \t" ;
+        cin >> n;
+    for (i = 1; i <= n; i++) 
+    {
+        cout << i << " ";
+		sum=sum+i;
+    }
+     cout << "Sum of numbers: \t "<<sum << endl;
+     
+     _getch();
+     return 0;
+     
+}
